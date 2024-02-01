@@ -3,6 +3,7 @@
     --viola: #948EE6;
     --bg-footer: #3E3E3E;
     --border-blu: #B5DDFF;
+    --white: #EDEDED;
 }
 
 *{
@@ -87,6 +88,10 @@ ul{
 .pb-md{
     padding-bottom: 50px;
 }
+/* padding-bottom large */
+.pb-lg{
+    padding-bottom: 80px;
+}
 
 .border-blu{
     border: 1px solid var(--blu);
@@ -94,8 +99,14 @@ ul{
     border-radius: 30px;
 }
 .border-purple{
-    border: 1px solid var(--blu);
+    border: 1px solid var(--viola);
     background: var(--viola);
+    border-radius: 30px;
+}
+
+.border-white{
+    border: 1px solid var(--white);
+    background: var(--white);
     border-radius: 30px;
 }
 
@@ -150,6 +161,9 @@ header ul li:hover{
 
 
 /* MAIN */
+.row{
+    flex-direction: column;
+}
 
 /* demo */
 .container{
@@ -162,9 +176,6 @@ header ul li:hover{
     margin-top: calc(50px + 70px);
 }
 
-.demo .row{
-    flex-direction: column;
-}
 
 .demo .row .col:first-child{
     height: 750px;
@@ -203,10 +214,6 @@ section.strategic{
     text-align: center;
 }
 
-.testimonials-cards .row{
-    flex-direction: column;
-}
-
 .testimonials-cards .row .col{
     width: 100%;
     height: 450px;
@@ -217,6 +224,24 @@ section.strategic{
 }
 
 
+/* benefits */
+.benefits{
+    background-color: var(--viola);
+}
+
+.benefits h2{
+    color: white;
+    text-align: center;
+}
+
+.benefits-card .row .col{
+    width: 100%;
+    height: 350px;
+}
+
+.benefits-card .row .col:not(:last-child){
+    margin-bottom: 30px;
+}
 
 
 

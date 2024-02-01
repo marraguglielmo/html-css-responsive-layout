@@ -135,16 +135,12 @@ header ul li:hover{
 .row{
     flex-direction: column;
 }
-.col{
-    height: 100%;
+
+.row .col:first-child{
+    height: 750px;
 }
 
-.row .col .big-card{
-    width: 100%;
-    height: 650px;
-}
-.row .col .card{
-    width: 100%;
+.row .col{
     height: 450px;
 }
 
@@ -161,17 +157,34 @@ header ul li:hover{
 @media screen and (min-width: 768px) {
 
     .demo .container{
+        min-width: 770px;
+        max-width: 800px;
     }
     
     .demo .row{
         flex-flow: row wrap;
+        justify-content: space-between;
+        /* width: 1190px; */
     }
     
     .row .col{
         width: 250px;
+        height: 600px;
     }
+
+    .row .col:nth-child(3){
+        height: 450px;
+    }
+    .row .col:nth-child(4){
+        height: 450px;
+    }
+    .row .col:nth-child(5){
+        height: 450px;
+    }
+
     .row .col:first-child{
         width: 500px;
+        height: 600px;
     }
 
 }

@@ -13,12 +13,17 @@
 
 body{
     font-family: 'PT Sans';
+    background-color: #EDEDED;
     margin-top: 70px;
 }
 
 header a{
     text-decoration: none;
     color: white;
+}
+
+p{
+    line-height: 25px;
 }
 
 ul{
@@ -28,7 +33,7 @@ ul{
 /* utils */
 
 .debug{
-    border: 1px solid green;
+    border: 2px solid green;
     /* background-color: red; */
 }
 
@@ -74,9 +79,23 @@ ul{
     margin-bottom: 80px;
 }
 
+/* padding-top medio */
+.pt-md{
+    padding-top: 50px;
+}
+/* padding-bottom medio */
+.pb-md{
+    padding-bottom: 50px;
+}
+
 .border-blu{
     border: 1px solid var(--blu);
     background: var(--border-blu);
+    border-radius: 30px;
+}
+.border-purple{
+    border: 1px solid var(--blu);
+    background: var(--viola);
     border-radius: 30px;
 }
 
@@ -86,7 +105,7 @@ ul{
 }
 
 /* texts */
-h3{
+h2{
     font-size: 2rem;
 }
 
@@ -135,7 +154,7 @@ header ul li:hover{
 /* demo */
 .container{
     width: 85%;
-    background: red;
+    /* background: red; */
 }
 
 .demo{
@@ -143,19 +162,20 @@ header ul li:hover{
     margin-top: calc(50px + 70px);
 }
 
-.row{
+.demo .row{
     flex-direction: column;
 }
 
-.row .col:first-child{
+.demo .row .col:first-child{
     height: 750px;
 }
 
-.row .col{
+.demo .row .col{
+    width: 100%;
     height: 450px;
 }
 
-.row .col:not(:last-child){
+.demo .row .col:not(:last-child){
     margin-bottom: 30px;
 }
 
@@ -172,6 +192,42 @@ section.strategic{
 .strategic-2{
     height: 700px;
 }
+
+
+/* testimonials */
+.testimonials h2{
+    color: var(--viola);
+}
+
+.testimonials-top{
+    text-align: center;
+}
+
+.testimonials-cards .row{
+    flex-direction: column;
+}
+
+.testimonials-cards .row .col{
+    width: 100%;
+    height: 450px;
+}
+
+.testimonials-cards .row .col:not(:last-child){
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

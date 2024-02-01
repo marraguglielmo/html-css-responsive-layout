@@ -24,7 +24,7 @@ header a{
 }
 
 p{
-    line-height: 25px;
+    line-height: 35px;
 }
 
 ul{
@@ -83,6 +83,10 @@ ul{
 /* padding-top medio */
 .pt-md{
     padding-top: 50px;
+}
+/* padding-top large */
+.pt-lg{
+    padding-top: 80px;
 }
 /* padding-bottom medio */
 .pb-md{
@@ -161,16 +165,17 @@ header ul li:hover{
 
 
 /* MAIN */
+.container{
+    width: 85%;
+    margin: 0 auto;
+    /* background: red; */
+}
+
 .row{
     flex-direction: column;
 }
 
 /* demo */
-.container{
-    width: 85%;
-    /* background: red; */
-}
-
 .demo{
     /* height header fixed + margin */
     margin-top: calc(50px + 70px);
@@ -243,6 +248,32 @@ section.strategic{
     margin-bottom: 30px;
 }
 
+
+/* about us */
+.about-us h2{
+    color: var(--viola);
+    font-size: 2.6rem;
+}
+
+.ab-us-bottom .ab-us-img{
+    height: 250px;
+}
+
+.ab-us-bottom p{
+    color: var(--viola);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.ab-us-bottom .btn{
+    background: var(--viola);
+    color: white;
+    text-decoration: none;
+}
+
+.ab-us-bottom .btn-lkd:hover{
+    filter: brightness(.8);
+}
 
 
 

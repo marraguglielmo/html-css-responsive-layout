@@ -525,6 +525,7 @@ footer p a{
         width: 1140px;
     }
     
+    /* header */
     .menu i{
         display: none;
     }
@@ -552,18 +553,30 @@ footer p a{
 
     /* demo */
     .demo .container .row{
-        height: 650px;
+        /* height: 650px; */
+    }
+
+    .demo .container .row .col .card#card-1{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .demo .container .row .col .card-txt{
+        width: 50%;
+    }
+
+    .demo .container .row .col .img-app:first-child{
+        width: 30%;
     }
     
-    .demo .container .row .col:nth-child(1),
+    .demo .container .row .col:first-child,
     .demo .container .row .col:nth-child(2){
-        height: 300px;
+        height: 390px;
     }
 
     .demo .container .row .col{
         height: 300px;
         width: calc(100% / 3);
-        padding: 20px;
     }
     
     /* strategic */

@@ -527,8 +527,26 @@ footer p a{
     }
     
     /* testimonials */
+    .testimonials-cards .row{
+        width: 100%;
+    }
+    
     .testimonials-cards .row .col{
-        height: 300px;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .testimonials-cards .row .col .test-img{
+        width: 90%;
+    }
+
+    .testimonials-cards .row .col .test-card{
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .testimonials-cards .row .col .test-card p:last-child{
+        text-align: left;
     }
     
     .testimonials h2{
@@ -654,6 +672,10 @@ footer p a{
     /* testimonials */
     .testimonials .container{
         max-width: 1200px;
+    }
+
+    .testimonials-cards .row .col .test-img{
+        width: 30%;
     }
 
     /* benefits */

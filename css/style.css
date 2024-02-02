@@ -4,6 +4,7 @@
     --bg-footer: #3E3E3E;
     --border-blu: #B5DDFF;
     --white: #EDEDED;
+    --black-txt: #5B7082;
 }
 
 *{
@@ -18,7 +19,12 @@ body{
     margin-top: 70px;
 }
 
-header a{
+img{
+    max-width: 100%;
+}
+
+header,
+section:not(.started) a{
     text-decoration: none;
     color: white;
 }
@@ -106,18 +112,15 @@ ul{
 }
 
 .border-blu{
-    border: 1px solid var(--blu);
     background: var(--border-blu);
     border-radius: 30px;
 }
 .border-purple{
-    border: 1px solid var(--viola);
     background: var(--viola);
     border-radius: 30px;
 }
 
 .border-white{
-    border: 1px solid var(--white);
     background: var(--white);
     border-radius: 30px;
 }
@@ -127,11 +130,27 @@ ul{
     padding: 10px 20px;
 }
 
+.card{
+    padding: 30px 30px 0 30px;
+    height: 100%;
+}
+
+/* .col{
+    height: 100%;
+} */
+
+/* .row{
+    height: 100%;
+} */
+
 /* texts */
 h2{
     font-size: 2rem;
 }
 
+h4{
+    font-size: 1.5rem;
+}
 
 /* HEADER */
 header{
@@ -187,6 +206,12 @@ header ul li:hover{
 .demo{
     /* height header fixed + margin */
     margin-top: calc(50px + 70px);
+    color: var(--black-txt);
+    font-weight: 600;
+}
+
+.demo h4{
+    color: var(--blu);
 }
 
 
@@ -202,6 +227,30 @@ header ul li:hover{
 .demo .row .col:not(:last-child){
     margin-bottom: 30px;
 }
+
+.demo .row .col .card .btn{
+    background-color: var(--blu);
+    padding: 10px 55px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.demo .row .col .card .btn-app:hover {
+    filter: brightness(.8);
+}
+
+.demo .row .col .card .btn i{
+    margin-right: 3px;
+}
+
+.demo .row .col .card .img-app{
+    border: 1px solid red;
+    height: 100%;
+}
+
+
+
+
 
 /* strategic */
 .strategic{
@@ -373,8 +422,8 @@ footer p a{
 
     /* demo */
     .container{
-        min-width: 700px;
-        max-width: 900px;
+        width: 720px;
+        
     }
     
     .demo .container .row{
@@ -451,12 +500,6 @@ footer p a{
         width: 100%;
     }
 
-    /* started */
-    /* footer */
-    .started .container,
-    footer .container{
-        max-width: 750px;
-    }
     
 }
 /* /(min-width: 768px) */
@@ -464,6 +507,10 @@ footer p a{
 
 @media screen and (min-width: 1200px) {
 
+    .container{
+        width: 1140px;
+    }
+    
     .menu i{
         display: none;
     }

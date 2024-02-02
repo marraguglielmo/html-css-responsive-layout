@@ -1,6 +1,6 @@
 :root{
     --blu: #028FDB;
-    --viola: #948EE6;
+    --viola: #9593E6;
     --bg-footer: #3E3E3E;
     --border-blu: #B5DDFF;
     --white: #EDEDED;
@@ -273,12 +273,46 @@ header ul li:hover{
     flex-direction: column;
 }
 
-.strategic-1 .img{
-    height: 350px;
+.strategic-2{
+    /* height: 700px; */
 }
 
-.strategic-2{
-    height: 700px;
+.strategic-2 .app-dev{
+    background-color: var(--white);
+    border-radius: 50px;
+    padding: 40px 30px;
+    text-align: center;
+    color: black;
+}
+
+.strategic-2 .app-dev h3{
+    font-size: 1.7rem;
+}
+
+.strategic-2 .app-dev p{
+    font-style: italic;
+}
+
+.strategic-2 .app-dev .btn-arrow{
+    display: flex;
+    justify-content: center;
+}
+
+.strategic-2 .app-dev .btn-arrow a:hover{
+    filter: brightness(.8);
+}
+
+.strategic-2 .app-dev a{
+    background-color: var(--viola);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: black;
 }
 
 
@@ -470,6 +504,7 @@ footer p a{
 
     .strategic-1 h2{
         font-size: 3rem;
+        margin-top: 200px;
     }
     
     /* testimonials */
@@ -552,9 +587,6 @@ footer p a{
     }
 
     /* demo */
-    .demo .container .row{
-        /* height: 650px; */
-    }
 
     .demo .container .row .col .card#card-1{
         display: flex;
@@ -592,6 +624,12 @@ footer p a{
     .strategic .container .strategic-2{
         width: 50%;
         margin-top: 150px;
+        padding-left: 100px;
+        padding-top: 90px;
+    }
+
+    .strategic .container .strategic-2 .app-dev{
+        width: 100%;
     }
 
     /* testimonials */

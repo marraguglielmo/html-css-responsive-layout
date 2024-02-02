@@ -54,6 +54,10 @@ ul{
     justify-content: space-between;
 }
 
+.space-around{
+    justify-content: space-around;
+}
+
 .m-auto{
     margin: 0 auto;
 }
@@ -200,7 +204,7 @@ header ul li:hover{
 }
 
 /* strategic */
-section.strategic{
+.strategic{
     background-color: var(--viola);
     color: white;
 }
@@ -254,6 +258,10 @@ section.strategic{
 
 
 /* about us */
+.about-us .container{
+    flex-direction: column;
+}
+
 .about-us h2{
     color: var(--viola);
     font-size: 2.6rem;
@@ -353,52 +361,104 @@ footer p a{
 }
 
 
-
-
-
-
-
-
-
-
-
-/*  *********************
-    SOLUZIONI RESPONSIVE
-    ********************* */
+/*  ***************************
+        SOLUZIONI RESPONSIVE
+    *************************** */
 
 @media screen and (min-width: 768px) {
 
-    .demo .container{
-        width: 750px;
-        /* min-width: 770px;
-        max-width: 800px; */
+    /* demo */
+    .container{
+        min-width: 700px;
+        max-width: 900px;
     }
     
-    .demo .row{
+    .demo .container .row{
+        flex-flow: row wrap; 
+        height: 1200px;
+    }
+
+    .demo .container .row .col:nth-child(1){
+        width: calc(100% / 1.5);
+    }
+    .demo .container .row .col:nth-child(2){
+        width: calc(100% / 3);
+    }
+
+    .demo .container .row .col:nth-child(1),
+    .demo .container .row .col:nth-child(2){
+        height: 650px;
+    }
+
+    .demo .container .row .col{
+        height: 500px;
+        width: calc(100% / 3);
+        padding: 20px;
+        /* margin-bottom: 0; */
+    }
+
+    /* strategic */
+    .strategic-1 .img{
+        height: 550px;
+    }
+
+    .strategic-1 h2{
+        font-size: 3rem;
+    }
+    
+    /* testimonials */
+    .testimonials-cards .row .col{
+        height: 300px;
+    }
+    
+    .testimonials h2{
+        font-size: 2.5rem;
+    }
+
+    /* benefits */
+    .benefits h2{
+        font-size: 2.5rem;
+    }
+    
+    .benefits .benefits-card .row{
         flex-flow: row wrap;
-        justify-content: space-between;
-        /* width: 1190px; */
+    }
+
+    .benefits .benefits-card .row .col{
+        width: 45%;
+    }
+
+    /* about us */
+    .about-us .container{
+        flex-direction: row;
+    }
+    .about-us .container h2{
+        font-size: 3.5rem;
     }
     
-    .row .col{
-        width: 250px;
-        height: 600px;
+    .about-us .container .ab-us-txt{
+        width: 65%;
+        padding-right: 40px;
     }
 
-    .row .col:nth-child(3){
-        height: 450px;
+    .about-us .container .ab-us-bottom{
+        width: 35%;
     }
-    .row .col:nth-child(4){
-        height: 450px;
-    }
-    .row .col:nth-child(5){
-        height: 450px;
+    .about-us .container .ab-us-bottom .ab-us-img{
+        width: 100%;
     }
 
-    .row .col:first-child{
-        width: 500px;
-        height: 600px;
+    /* started */
+    /* footer */
+    .started .container,
+    footer .container{
+        max-width: 750px;
     }
+    
+    
+
+    /* /(min-width: 768px) */
+    
 
 }
     

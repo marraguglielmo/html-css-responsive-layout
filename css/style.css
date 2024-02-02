@@ -363,13 +363,31 @@ header ul li:hover{
     color: white;
     text-align: center;
 }
-
 .benefits-card .row .col{
     width: 100%;
-    height: 350px;
+    padding: 50px 30px 30px 30px;
+    color: var(--black-txt);
 }
 
-.benefits-card .row .col:not(:last-child){
+.benefits-card .row .col p:first-child{
+    color: var(--viola);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.benefits-card .row .col h3{
+    color: var(--viola);
+    font-size: 2rem;
+}
+
+.benefits-card .row .col .btn-more a{
+    background-color: var(--viola);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 60px;
+}
+
+.benefits-card .row .col{
     margin-bottom: 30px;
 }
 

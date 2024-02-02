@@ -403,14 +403,27 @@ header ul li:hover{
 }
 
 .ab-us-bottom .ab-us-img{
-    width: 50%;
-    height: 250px;
+    width: fit-content;
+}
+
+.ab-us-bottom .ab-us-img i{
+    color: var(--viola);
+    font-size: 5rem;
+    position: relative;
+    bottom: 180px;
+    right: 70px;
+}
+
+.ab-us-bottom .ab-us-img img{
+    width: 250px;
+    border-radius: 50%;
 }
 
 .ab-us-bottom p{
     color: var(--viola);
     font-weight: bolder;
     font-size: 2rem;
+    line-height: 45px
 }
 
 .ab-us-bottom .btn{
@@ -535,10 +548,6 @@ footer p a{
     }
 
     /* strategic */
-    .strategic-1 .img{
-        height: 550px;
-    }
-
     .strategic-1 h2{
         font-size: 3rem;
         margin-top: 200px;
@@ -601,7 +610,16 @@ footer p a{
         width: 35%;
     }
     .about-us .container .ab-us-bottom .ab-us-img{
-        width: 100%;
+        /* width: 100%; */
+    }
+
+    .ab-us-bottom .ab-us-img i{
+        bottom: 250px;
+        left: 180px;
+    }
+
+    .ab-us-bottom .ab-us-img img{
+        width: 300px;
     }
 
     

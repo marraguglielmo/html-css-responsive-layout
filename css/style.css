@@ -209,6 +209,10 @@ header ul li:hover{
     color: white;
 }
 
+.strategic .container{
+    flex-direction: column;
+}
+
 .strategic-1 .img{
     height: 350px;
 }
@@ -394,7 +398,6 @@ footer p a{
         height: 500px;
         width: calc(100% / 3);
         padding: 20px;
-        /* margin-bottom: 0; */
     }
 
     /* strategic */
@@ -455,12 +458,8 @@ footer p a{
         max-width: 750px;
     }
     
-    
-
-    /* /(min-width: 768px) */
-    
-
 }
+/* /(min-width: 768px) */
     
 
 @media screen and (min-width: 1200px) {
@@ -489,5 +488,49 @@ footer p a{
         background: white;
         color: black;
     }
+
+    /* demo */
+    .demo .container .row{
+        height: 650px;
+    }
+    
+    .demo .container .row .col:nth-child(1),
+    .demo .container .row .col:nth-child(2){
+        height: 300px;
+    }
+
+    .demo .container .row .col{
+        height: 300px;
+        width: calc(100% / 3);
+        padding: 20px;
+    }
+    
+    /* strategic */
+    .strategic .container{
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    .strategic .container .strategic-1{
+        width: 50%;
+    }
+
+    .strategic .container .strategic-2{
+        width: 50%;
+        margin-top: 150px;
+    }
+
+    /* testimonials */
+    .testimonials .container{
+        max-width: 1200px;
+    }
+
+    /* benefits */
+    .benefits .benefits-card .row .col{
+        width: 31%;
+    }
+    
+    
     
 }
+/* /(min-width: 1200px) */

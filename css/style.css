@@ -131,15 +131,15 @@ ul{
 }
 
 .card{
-    padding: 30px 20px;
+    padding: 20px 20px;
     /* height: 100%; */
 }
 
 /* .col{
     height: 100%;
-} */
+}
 
-/* .row{
+.row{
     height: 100%;
 } */
 
@@ -215,8 +215,8 @@ header ul li:hover{
 }
 
 
-.demo .row .col:first-child{
-    height: 650px;
+.demo .row .col .card:first-child{
+    padding-bottom: 0;
 }
 
 .demo .row .col{
@@ -252,10 +252,13 @@ header ul li:hover{
 }
 
 .demo .row .col .card .img-app{
-    border: 1px solid red;
-    width: 60%;
+    width: 80%;
+    max-width: 300px;
 }
 
+.demo .row .col .card .img-app img{
+    display: block;
+}
 
 
 
@@ -436,7 +439,6 @@ footer p a{
     
     .demo .container .row{
         flex-flow: row wrap; 
-        height: 1200px;
     }
 
     .demo .container .row .col:nth-child(1){
@@ -446,15 +448,19 @@ footer p a{
         width: calc(100% / 3);
     }
 
-    .demo .container .row .col:nth-child(1),
+    /* FIXME: ALTEZZA CARD 2 */
     .demo .container .row .col:nth-child(2){
-        height: 650px;
+        height: 100%;
     }
 
     .demo .container .row .col{
-        height: 500px;
         width: calc(100% / 3);
-        padding: 20px;
+        padding: 5px;
+    }
+
+    .demo .row .col .card .img-app{
+        margin-right: 0;
+        margin-left: 0;
     }
 
     /* strategic */

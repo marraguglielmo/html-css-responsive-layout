@@ -317,6 +317,13 @@ header ul li:hover{
 
 
 /* testimonials */
+.testimonials img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .testimonials h2{
     color: var(--viola);
 }
@@ -326,8 +333,20 @@ header ul li:hover{
 }
 
 .testimonials-cards .row .col{
+    flex-direction: column;
+    padding: 25px;
     width: 100%;
-    height: 450px;
+    color: var(--white);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.testimonials-cards .row .col .test-card i{
+    font-size: 1.5rem;
+}
+
+.testimonials-cards .row .col .test-card p:last-child{
+    font-weight: bold;
 }
 
 .testimonials-cards .row .col:not(:last-child){
